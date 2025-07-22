@@ -1,0 +1,15 @@
+<section class="team-page">
+  <div class="header">
+    <h1>Team</h1>
+    <button mat-flat-button color="primary" routerLink="/team/add" class="submit-btn">
+      Add New Member
+    </button>
+  </div>
+
+  <div class="grid">
+    <app-member-card
+      *ngFor="let p of people"
+      [member]="p">
+    </app-member-card>
+  </div>
+</section>

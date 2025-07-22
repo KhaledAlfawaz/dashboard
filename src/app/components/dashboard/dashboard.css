@@ -1,0 +1,22 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+}
+

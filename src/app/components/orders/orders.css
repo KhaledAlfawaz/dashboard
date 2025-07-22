@@ -1,0 +1,94 @@
+.orders-container {
+  background-color: #F5F6FA;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.filter-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: #F9F9FB;
+  border-radius: 6px;
+  border: 0.6px solid #D5D5D5;
+}
+
+
+
+.mat-mdc-form-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-bar mat-form-field {
+  width: 150px;
+  align-self: center;
+}
+
+::ng-deep mat-form-field.order-filter
+  .mat-mdc-form-field-subscript-wrapper
+{
+  display: none !important;
+}
+
+:host ::ng-deep button.RestButton.mat-mdc-button {
+  --mat-button-text-label-text-color: #EA0234 !important;
+}
+
+::ng-deep .filter-select-panel {
+  background-color: #fff !important;
+  width: 50rem !important;
+}
+
+.mat-mdc-select-value {
+  width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  background-color: white;
+  border-radius: 6px;
+}
+
+th.mat-header-cell {
+  background: #f7f9fc;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+td.mat-cell {
+  background: #fff;
+  padding: 1rem;
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.status-chip.completed { background-color: #26a69a; }
+.status-chip.processing { background-color: #8e24aa; }
+.status-chip.rejected   { background-color: #ef5350; }
+.status-chip.on-hold    { background-color: #ffb300; color: #333; }
+.status-chip.in-transit { background-color: #5c6bc0; }
+
+mat-paginator {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}

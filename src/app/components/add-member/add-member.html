@@ -1,0 +1,71 @@
+<section class="add-member-page">
+  <h2>Add Team Member</h2>
+
+  <div class="form-card">
+    <div class="upload-photo">
+      <label for="photoInput">
+        <ng-container *ngIf="photoPreview; else camera">
+          <img
+            [src]="photoPreview"
+            class="avatar-preview"
+            alt="Avatar preview"
+          />
+        </ng-container>
+        <ng-template #camera>
+          <mat-icon></mat-icon>
+        </ng-template>
+        <span>Upload Photo</span>
+      </label>
+      <input
+        id="photoInput"
+        type="file"
+        hidden
+        accept="image/*"
+        (change)="onPhotoSelect($event)"
+      />
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="submit()" class="add-member-form">
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" placeholder="Enter your first name" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" placeholder="Enter your last name" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Your Email</mat-label>
+          <input matInput formControlName="email" placeholder="Enter your email" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="phone" placeholder="Enter your phone number" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Position</mat-label>
+          <input matInput formControlName="position" placeholder="Position" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="form-field" >
+          <mat-label>Gender</mat-label>
+          <mat-select formControlName="gender" panelClass="select-panel">
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <button mat-flat-button color="primary" class="submit-btn">
+        Add Now
+      </button>
+    </form>
+  </div>
+</section>

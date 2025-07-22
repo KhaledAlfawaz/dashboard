@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">
+    <div class="card-text">
+      <div class="card-title">{{ title }}</div>
+      <div class="card-value">{{ value }}</div>
+    </div>
+    <div class="card-icon">
+      <mat-icon>{{ icon }}</mat-icon>
+    </div>
+  </div>
+
+  <div *ngIf="changePercent && changeLabel" class="card-footer">
+    <mat-icon
+      class="change-icon"
+      [ngClass]="changeDirection"
+      >{{ changeDirection === 'up' ? 'trending_up' : 'trending_down' }}</mat-icon
+    >
+    <span class="change-percent">{{ changePercent }}</span>
+    <span class="change-label">{{ changeLabel }}</span>
+  </div>
+</div>

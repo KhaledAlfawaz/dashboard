@@ -1,0 +1,145 @@
+.sidenav-container {
+  height: 100vh;
+
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.brand .brand-highlight {
+  color: #2f80ed;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem;
+  border-radius: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.nav-section a mat-icon {
+  font-size: 20px;
+}
+
+.nav-section a.active {
+  background-color: #2f80ed;
+}
+.nav-section a:hover {
+  background-color: rgba(47, 128, 237, 0.1);
+}
+
+.section-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 2rem 0 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.nav-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bottom a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem;
+  border-radius: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-bottom a:hover {
+  background-color: rgba(47, 128, 237, 0.1);
+}
+
+.nav-section a .mat-list-item-content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+.menu-btn {
+  margin-right: 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.search-field {
+  width: 300px;
+  margin: 0 1rem;
+}
+
+.search-field .mat-form-field-flex {
+  background: #f0f0f0;
+  border-radius: 20px;
+  height: 36px;
+}
+.search-field input.mat-input-element {
+  padding: 0 8px;
+  height: 36px;
+  font-size: 0.9rem;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.page-content {
+  padding: 1rem;
+  background: #f5f7fa;
+}

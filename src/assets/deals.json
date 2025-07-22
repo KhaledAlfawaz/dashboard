@@ -1,0 +1,74 @@
+[
+  {
+    "productImage": "assets/apple-watch.png",
+    "productName": "Apple Watch Series 4",
+    "location": "6096 Marjolaine Landing",
+    "dateTime": "12.09.2019 – 12.53 PM",
+    "piece": 423,
+    "amount": "$34,295",
+    "status": "Delivered"
+  },
+  {
+    "productImage": "assets/air-max-270.jpg",
+    "productName": "Air‑Max 270",
+    "location": "123 Elm Street, Apt 5B",
+    "dateTime": "13.09.2019 – 09.15 AM",
+    "piece": 128,
+    "amount": "$12,450",
+    "status": "Pending"
+  },
+  {
+    "productImage": "assets/minimal-chair.jpg",
+    "productName": "Minimal Chair Tool",
+    "location": "789 Broadway Ave.",
+    "dateTime": "14.09.2019 – 03.20 PM",
+    "piece": 76,
+    "amount": "$7,800",
+    "status": "Rejected"
+  },
+  {
+    "productImage": "assets/gumbo-mouse.png",
+    "productName": "Gumbo Mouse",
+    "location": "456 Oakwood Drive",
+    "dateTime": "15.09.2019 – 10.05 AM",
+    "piece": 315,
+    "amount": "$18,900",
+    "status": "Delivered"
+  },
+  {
+    "productImage": "assets/camera-tripod.jpg",
+    "productName": "Camera Tripod",
+    "location": "321 Pine Street",
+    "dateTime": "16.09.2019 – 02.30 PM",
+    "piece": 54,
+    "amount": "$4,200",
+    "status": "On Hold"
+  },
+  {
+    "productImage": "assets/amazfit-vip.jpg",
+    "productName": "Amazfit Vip",
+    "location": "222 Maple Lane",
+    "dateTime": "17.09.2019 – 11.45 AM",
+    "piece": 198,
+    "amount": "$15,600",
+    "status": "Processing"
+  },
+  {
+    "productImage": "assets/lily-french.png",
+    "productName": "Lily French Heels",
+    "location": "999 Sunset Blvd",
+    "dateTime": "18.09.2019 – 04.10 PM",
+    "piece": 89,
+    "amount": "$9,750",
+    "status": "Completed"
+  },
+  {
+    "productImage": "assets/howard-adkins.png",
+    "productName": "Howard Adkins Watch",
+    "location": "555 Hillcrest Road",
+    "dateTime": "19.09.2019 – 01.20 PM",
+    "piece": 240,
+    "amount": "$22,800",
+    "status": "In Transit"
+  }
+]

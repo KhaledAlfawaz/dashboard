@@ -1,0 +1,12 @@
+<section class="products-page">
+  <h1>Products</h1>
+
+  <div class="products-grid">
+    <app-product-card
+      *ngFor="let p of products"
+      [product]="p"
+      (favoriteToggled)="toggleFavorite($event)"
+    >
+    </app-product-card>
+  </div>
+</section>

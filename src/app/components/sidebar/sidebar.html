@@ -1,0 +1,86 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidebar" mode="side" opened>
+<div class="brand" >
+      <span class="brand-highlight">Dash</span>Stack
+    </div>
+
+    <nav class="nav-section">
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon>schedule</mat-icon>
+        <span>Dashboard</span>
+      </a>
+      <a mat-list-item routerLink="/products" routerLinkActive="active">
+        <mat-icon>grid_on</mat-icon>
+        <span>Products</span>
+      </a>
+      <a mat-list-item routerLink="/favorites" routerLinkActive="active">
+        <mat-icon>favorite_border</mat-icon>
+        <span>Favorites</span>
+      </a>
+      <a mat-list-item routerLink="/inbox" routerLinkActive="active">
+        <mat-icon>chat_bubble_outline</mat-icon>
+        <span>Inbox</span>
+      </a>
+      <a mat-list-item routerLink="/orders" routerLinkActive="active">
+        <mat-icon>view_list</mat-icon>
+        <span>Order Lists</span>
+      </a>
+      <a mat-list-item routerLink="/stock" routerLinkActive="active">
+        <mat-icon>inventory_2</mat-icon>
+        <span>Product Stock</span>
+      </a>
+    </nav>
+
+    <div class="section-label">PAGES</div>
+
+    <nav class="nav-section">
+      <a mat-list-item routerLink="/pricing" routerLinkActive="active">
+        <mat-icon>redeem</mat-icon>
+        <span>Pricing</span>
+      </a>
+      <a mat-list-item routerLink="/calendar" routerLinkActive="active">
+        <mat-icon>calendar_today</mat-icon>
+        <span>Calendar</span>
+      </a>
+      <a mat-list-item routerLink="/todo" routerLinkActive="active">
+        <mat-icon>check_box</mat-icon>
+        <span>To-Do</span>
+      </a>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active">
+        <mat-icon>group</mat-icon>
+        <span>Contact</span>
+      </a>
+      <a mat-list-item routerLink="/invoice" routerLinkActive="active">
+        <mat-icon>receipt_long</mat-icon>
+        <span>Invoice</span>
+      </a>
+      <a mat-list-item routerLink="/ui" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon>
+        <span>UI Elements</span>
+      </a>
+      <a mat-list-item routerLink="/team" routerLinkActive="active">
+        <mat-icon>person_outline</mat-icon>
+        <span>Team</span>
+      </a>
+      <a mat-list-item routerLink="/table" routerLinkActive="active">
+        <mat-icon>table_chart</mat-icon>
+        <span>Table</span>
+      </a>
+    </nav>
+
+    <div class="nav-bottom">
+      <a mat-list-item routerLink="/settings" routerLinkActive="active">
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </a>
+      <a mat-list-item routerLink="/logout">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </a>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,63 @@
+.deals-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deals-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.mat-mdc-header-cell {
+  background-color: #F1F4F9 !important;
+}
+
+th.mat-header-cell {
+  background: #f7f9fc;
+  color: #555;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+td.mat-cell {
+  background: #fff;
+  padding: 1rem;
+  border-bottom: none;
+  vertical-align: middle;
+}
+
+.product-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.status-chip.delivered   { background-color: #26a69a; }
+.status-chip.pending     { background-color: #ffca28; color: #333; }
+.status-chip.rejected    { background-color: #ef5350; }
+.status-chip.completed   { background-color: #26a69a; }
+.status-chip.processing  { background-color: #8e24aa; }
+.status-chip.on-hold     { background-color: #ffb300; color: #333; }
+.status-chip.in-transit  { background-color: #5c6bc0; }

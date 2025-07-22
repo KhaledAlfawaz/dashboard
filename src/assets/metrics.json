@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Total User",
+    "value": 40689,
+    "icon": "person",
+    "changePercent": "8.5%",
+    "changeLabel": "Up from yesterday",
+    "changeDirection": "up"
+  },
+  {
+    "title": "Total Order",
+    "value": 10293,
+    "icon": "inventory_2",
+    "changePercent": "1.3%",
+    "changeLabel": "Up from past week",
+    "changeDirection": "up"
+  },
+  {
+    "title": "Total Sales",
+    "value": "$89,000",
+    "icon": "show_chart",
+    "changePercent": "4.3%",
+    "changeLabel": "Down from yesterday",
+    "changeDirection": "down"
+  },
+  {
+    "title": "Total Pending",
+    "value": 2040,
+    "icon": "schedule",
+    "changePercent": "1.8%",
+    "changeLabel": "Up from yesterday",
+    "changeDirection": "up"
+  }
+]

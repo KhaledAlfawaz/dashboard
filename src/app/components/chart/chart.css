@@ -1,0 +1,9 @@
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+
+canvas {
+  display: block;
+}
